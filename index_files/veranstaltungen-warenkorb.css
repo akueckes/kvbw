@@ -1,0 +1,702 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Warenkorb-Widget */
+#warenkorb_widget {
+	clear:right;
+	float:right;
+	margin-bottom:0.5em;
+}
+
+#warenkorb_widget a {
+	float:right;
+	display:block;
+	text-decoration:none;
+}
+
+#warenkorb_widget #wk_zahl {
+	/*width:30px;*/
+	min-width:18px;
+	height:30px;
+	display:block;
+	padding-left:14px;
+	/*background:url(../pics/einkaufswagen-empty.png) no-repeat top left;*/
+	background:url(../pics/einkaufswagen2.png) no-repeat top left;
+	color:#fff;
+	font-size:14px;
+}
+
+#warenkorb_widget .zahl {
+	display:block;
+	background-color:#990033;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border-color:#fff;
+	border:2px solid #fff;
+	padding:0 5px;
+	text-align:center;
+}
+
+#warenkorb_widget .wk_text {
+	font-size: 0.8125em; 
+	color: #a1a1a1;
+	color:#818181;
+	line-height:30px;
+	padding-top:4px;
+	margin-right:0.25em;
+}
+#warenkorb_widget .wk_text:hover {
+	text-decoration:underline;
+}
+
+
+
+/****************** Veranstaltungskalender *****************/
+/* Formular */
+#bottomcolumn .messagebox {
+	width: 60.5%;
+	/*box-sizing:border-box; 
+	-moz-box-sizing:border-box;*/
+}
+
+/* Uebersicht allgemein 
+.veranstaltungen ul {
+	list-style:none;
+	margin-left:0;
+}
+
+.veranstaltungen ul li {
+	clear:both;
+}*/
+
+/* Uebersichtsliste */
+.veranstaltungen ul.resultlist {
+	list-style:none;
+	margin-left:0;
+	font-size:1rem;
+}
+
+.veranstaltungen ul.resultlist > li {
+	position:relative;
+	clear:both;
+	padding:0;
+	border:none;
+	background:none;
+}
+/*.veranstaltungen ul li:nth-child(even) {
+	background-color:#f1f1f1;
+}*/
+
+.veranstaltungen .datum {
+	float:left;
+	width:6em;
+	padding:0.75em 0;
+	/*background-color:#7f7fb2;
+	color:#fff;*/
+	text-align:center;
+	border-bottom:1px solid #fff;;
+}
+
+.veranstaltungen .datum span {
+	display:block;
+}
+
+.veranstaltungen .datum .tag {
+	font-size:2.5em;
+	font-family:"Calluna", Georgia, "Times New Roman", Times, serif; /* :Calluna-Regular, Georgia, "Times New Roman", Times, serif; */
+	margin-bottom:0.5rem;
+}
+.veranstaltungen .datum .tag2 {
+	font-size:2.25em;
+	margin-bottom:0.5rem;
+	color:#7f7fb2;
+	font-weight:bold;
+	padding-top:3px;
+}
+
+.veranstaltungen .datum .monat {
+	text-transform:uppercase;
+	font-size:1.25em;
+}
+
+.veranstaltungen .datum .jahr {
+	color:#a1a1a1;
+	color:#818181;
+	/*color:#fff;*/
+}
+
+.veranstaltungen .beschreibung {
+	margin-left:6em;
+	padding:0.5em 0 1.5em 1em;
+	border-left:1px solid #c1c1c1;
+}
+
+.veranstaltungen .beschreibung p {
+	margin-bottom:0.25rem;
+}
+
+.veranstaltungen .beschreibung .info {
+	color:#a1a1a1;
+	color:#818181;
+	text-transform:uppercase;
+	font-size:0.9em;
+	font-style:normal;
+}
+
+.veranstaltungen .beschreibung .titel {
+	font-family:"Calluna", Georgia, "Times New Roman", Times, serif; /* :Calluna-Regular, Georgia, "Times New Roman", Times, serif; */
+	color:#990033;
+	font-size:1.25em;	
+}
+
+.veranstaltungen .beschreibung .titel a {
+	color:#990033;
+	text-decoration:none;
+}
+
+
+/****************** Veranstaltungskalender MAK *****************/
+.veranstaltungen.mak .formbox {
+	margin-bottom:2.25em;
+	margin-top:1.5em;
+}
+
+.veranstaltungen.mak .datum {
+	float:left;
+	width:8em;
+	padding:0.5em 0;
+	padding-top:1.5em;
+	text-align:left;
+	border:none;
+}
+
+.veranstaltungen.mak .datum span {
+	display:block;
+	margin-bottom:0.25rem;
+}
+
+.veranstaltungen.mak .datum .tag {
+	font-size:1rem;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/*.veranstaltungen.mak .datum .monat {
+	text-transform:uppercase;
+	font-size:1rem;
+}
+
+.veranstaltungen.mak .datum .jahr {
+	color:#a1a1a1;
+	color:#818181;
+}*/
+
+.veranstaltungen.mak .datum .ort {
+	text-transform:uppercase;
+	word-wrap:break-word;
+}
+
+
+.veranstaltungen.mak .beschreibung {
+	margin-left:8em;
+	padding:0.5em 0 0em 1em;
+	padding-bottom:2.5em;
+	padding-top:1.5em;
+	border-left:1px solid #c1c1c1;
+	/*border-bottom:1px solid #c1c1c1;*/
+}
+.veranstaltungen.mak li:last-child .beschreibung {
+	border-bottom:none;
+}
+.veranstaltungen.mak li:first-child .beschreibung, .veranstaltungen.mak li:first-child .datum {
+	padding-top:0.5em;
+}
+
+.veranstaltungen.mak .beschreibung p {
+	margin-bottom:0.25rem;
+}
+
+.veranstaltungen.mak .beschreibung .info {
+	color:#a1a1a1;
+	color:#818181;
+	text-transform:uppercase;
+	font-size:0.9em;
+	font-style:normal;
+}
+
+.veranstaltungen.mak .beschreibung .titel {
+	font-family:"Calluna", Georgia, "Times New Roman", Times, serif; /* :Calluna-Regular, Georgia, "Times New Roman", Times, serif; */
+	color:#990033;
+	font-size:1.25em;	
+	margin-bottom:0.5em;
+}
+
+/* hier wieder allgemein */
+.veranstaltungen .ausgebucht .beschreibung .titel, .veranstaltungen .ausgebucht .beschreibung .info, .veranstaltungen .ausgebucht .datum, .veranstaltungen .warteliste .beschreibung .titel, .veranstaltungen .warteliste .beschreibung .info, .veranstaltungen .warteliste .datum {
+	color:#a1a1a1;
+}
+.veranstaltungen .ausgebucht .beschreibung .titel a, .veranstaltungen .warteliste .beschreibung .titel a {
+	color:#a1a1a1;
+}
+
+.warteliste .preis, .ausgebucht .preis {
+	color:#a1a1a1;
+}
+
+
+/* Aufklappdetails */
+.veranstaltungen .details {
+    display: block;
+    font-weight: normal;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    background-color: #990033;
+    padding: 0.3125em 1em;
+    padding: 0.5em 1em;
+}
+.veranstaltungen .details:hover {
+	background-color:#d9d9e8;
+}
+
+/*.veranstaltungen .details.closed .detailinfo {
+    background: url(../pics/pfeil-rechts-weiss.png) right center no-repeat;
+	padding-right: 20px;
+	color: #fff;
+}
+.veranstaltungen .details.open .detailinfo:hover, .veranstaltungen .details.open:hover .detailinfo {
+    background: url(../pics/pfeil-oben-weiss.png) right center no-repeat;
+	color:#fff;
+}*/
+
+
+/* Anmeldebuttons */
+.veranstaltungen .anmelde_button, .veranstaltungen .anmelde_button2 {
+	float:right;
+	background:none;
+	padding:0;
+	margin:0 0 0.5em 0.5em;
+}
+
+.veranstaltungen .anmelde_button .kv-button {
+	display:inline-block;
+	width:30px;
+	height:30px;
+	padding:0;
+	border:none;
+	background-color:transparent;
+	/*background:url(../pics/einkaufswagen-add.png) center left no-repeat;*/
+	text-indent:-9999px;
+	color:#000066;
+	/*background:url(../pics/einkaufswagen-add.png) center center no-repeat #d9d9e8;
+	text-indent:-9999px;
+	padding:0.75em 2.5em;
+}
+.veranstaltungen form.anmelde_button .kv-button:hover {
+	background-color:#7f7fb2;*/
+}
+.veranstaltungen .anmelde_button .kv-button:hover {
+	background-color:transparent;
+}
+
+/* Icons */
+.veranstaltungen .kv-button.wk-icon {
+	background-image:url(../pics/einkaufswagen-add.png);
+	background-position:center left;
+	background-repeat:no-repeat;
+}
+
+.veranstaltungen .ausgebucht .kv-button.wk-icon, .veranstaltungen .kv-button.wk-icon.ausgebucht {
+	background-image:url(../pics/einkaufswagen-full.png);
+	cursor:default;
+}
+
+.veranstaltungen .warteliste .kv-button.wk-icon, .veranstaltungen .kv-button.wk-icon.warteliste {
+	background-image:url(../pics/einkaufswagen-wait.png);
+}
+
+.veranstaltungen .gebucht .kv-button.wk-icon, .veranstaltungen .gebucht.warteliste .kv-button.wk-icon, .veranstaltungen .kv-button.wk-icon.gebucht {
+	background-image:url(../pics/einkaufswagen-ok.png);
+}
+
+
+/*
+.veranstaltungen .ausgebucht {
+}
+.veranstaltungen .warteliste {
+	background-color:#f0d9e1;
+}
+.veranstaltungen .gebucht {
+	background-color:#d9d9e8;
+}
+*/
+
+
+/* Detaildaten */
+.veranstaltungen .detaildaten {
+	font-size:0.9em;
+	margin-left:0;
+}
+
+.veranstaltungen .detaildaten dd {
+	margin-left:0;
+}
+
+.veranstaltungen .detaildaten dt {
+	margin-top:1em;
+}
+.veranstaltungen .detaildaten dt:first-child {
+	margin-top:0;
+}
+
+.veranstaltungen .detaildaten p {
+	margin-bottom:1.5em;
+}
+
+
+
+/****************** Veranstaltungskalender Startseite Teaserbox *****************/
+.veranstaltungen.veranstaltungen-teaser .resultlist .row {
+	background-color:#fff;
+}
+
+.veranstaltungen.veranstaltungen-teaser .datum {
+	background-color:#3f3f3f;
+	width:5em;
+	padding:0.5em 0;
+}
+
+.veranstaltungen.veranstaltungen-teaser .datum span {
+	color:#fff;
+}
+.veranstaltungen.veranstaltungen-teaser .datum .tag {
+	font-size:1.9em;
+	margin-bottom:0.15em;
+}
+.veranstaltungen.veranstaltungen-teaser .datum .monat {
+	font-size:0.9em;
+	line-height:1em;
+}
+.veranstaltungen.veranstaltungen-teaser .datum .jahr {
+	font-size:0.75em;
+}
+
+.veranstaltungen.veranstaltungen-teaser .beschreibung {
+	margin-left:5em;
+	border:none;
+	padding: 0.25em 0 0 0.75em;
+}
+
+.veranstaltungen.veranstaltungen-teaser .beschreibung .info {
+	font-size:0.75em;
+}
+
+.veranstaltungen.veranstaltungen-teaser .beschreibung .titel {
+	font-size:1.1em;
+}
+
+
+
+/****************** Detailansicht *****************/
+.veranstaltungen.veranstaltung-detail .detaildaten {
+	font-size:1rem;
+}
+
+.detaildaten dt {
+	margin-top:1.5em;
+}
+
+.detaildaten dd {
+	margin-left:0;
+}
+
+.veranstaltung-detail{
+	margin-bottom:3em;
+}
+
+
+/****************** Warenkorb *****************/
+.tx-kvbw-warenkorb {
+	margin-bottom:3.5em;
+}
+
+/* Formular */
+/* AB HIER */
+
+.tx-kvbw-warenkorb .anmeldedetail {
+	width:100% !important;
+}
+
+
+form fieldset > h4, form > h4 {
+	margin-top:0;
+}
+/* BIS HIER */
+
+.resultlist .resultrow > dl > dd.kosten {
+	width:100%;
+	font-weight:bold;
+	text-align:right;
+	padding-right:1em;
+}
+
+.warenkorblist {
+	margin-bottom:0;
+}
+ul.warenkorblist {
+	list-style:none;
+	margin-left:0;
+}
+
+.warenkorblist .row {
+	border-bottom:1px solid #c1c1c1;
+	padding-bottom:1.5em;
+	margin-bottom:1em;
+	color:#990033;
+}
+.warenkorblist .row:last-child {
+	border:none;
+	padding-bottom:0;
+}
+
+.warenkorblist .row dl {
+	margin-bottom:0.5em;
+	color:#3f3f3f;
+}
+
+.warenkorblist .row dt {
+	display:none;
+}
+.warenkorblist .row dt.tndaten, .warenkorblist .row dt.preis, .warenkorblist .row dt.hinweis {
+	display:block;
+	margin-top:0.5em;
+}
+
+.warenkorblist .row dd.hinweis {
+	font-style:italic;
+}
+
+.warenkorblist .row .hinweis {
+	color:#3f3f3f;
+}
+
+.warenkorblist .row dd {
+	margin-left:0;
+}
+.warenkorblist .row dd.veranstaltung {
+	font-family:"Calluna", Georgia, "Times New Roman", Times, serif; /* :Calluna-Regular, Georgia, "Times New Roman", Times, serif; */
+	color:#990033;
+	font-size:1.25em;	
+}
+.warenkorblist .row dd.veranstaltung a {
+	color:#990033;
+	text-decoration:none;
+}
+
+.warenkorblist .row .tndaten table {
+	margin-bottom:0;
+}
+.warenkorblist .row table.tabelle-hintergrund th {
+	background-color:#f1f1f1;
+	color:#3f3f3f;
+}
+
+.warenkorblist .ausgebucht table.tabelle-hintergrund .preis, .warenkorblist .warteliste table.tabelle-hintergrund .preis {
+	color:#818181;
+}
+.warenkorblist .row.ausgebucht table.tabelle-hintergrund th.preis, .warenkorblist .row.warteliste table.tabelle-hintergrund th.preis {
+	background-color:#f1f1f1;
+	color:#818181;
+}
+
+.warenkorblist .row .remove_data {
+	float:right;
+}
+
+/* aus asu-boersen.css übernommen */
+.warenkorblist .teilnehmer {
+	clear:both;
+	margin-bottom:0.5em;
+}
+.warenkorblist .teilnehmer.tn-labels {
+    margin-bottom: 0;
+    font-size: 0.875em;
+}
+
+.warenkorblist .teilnehmer.tn-labels .tn-labels {
+	/*padding-left:1px;*/
+}
+
+.warenkorblist .teilnehmer legend {
+	float:left;
+    width:25%;
+    max-width: 15rem;
+    margin-bottom: 0;
+}
+
+.warenkorblist .teilnehmer .tn-labels {
+    display: inline-block;
+}
+.warenkorblist .teilnehmer .tn-anrede {
+    width:7.7%;
+}
+.warenkorblist .teilnehmer .tn-titel {
+    width:6.3%;
+    margin-left: 0.6%;
+}
+.warenkorblist .teilnehmer .tn-name {
+    width:22%;
+    margin-left: 0.6%;
+}
+.warenkorblist .teilnehmer .tn-typ {
+    width:5.6%;
+    margin-left: 0.6%;
+}
+
+.warenkorblist .teilnehmer label {
+    display: none;
+}
+
+.warenkorblist .teilnehmer select {
+    padding: 0.2rem;
+    font-size: 0.875em;
+}
+
+
+/****************** Modalbox *****************/
+.veranstaltungskalender_dialog.ui-widget {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.veranstaltungskalender_dialog .ui-widget-header {
+	background:none;
+	color:#3f3f3f;
+	border:none;
+}
+
+.veranstaltungskalender_dialog.ui-dialog .ui-dialog-buttonpane {
+	border:none;
+	padding:0.5em;
+}
+
+.veranstaltungskalender_dialog.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float:none;
+}
+
+.veranstaltungskalender_dialog.ui-dialog .ui-widget-content .kv-button.ui-state-default {
+	border:none;
+	background:none;
+	background-color:#7f7fb2;
+	background-color:#d9d9e8;
+	color:#fff;
+	color:#000066;
+	margin-right:0;
+	font-weight:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1rem;
+    border-radius: 0;
+}
+
+.veranstaltungskalender_dialog.ui-dialog .ui-widget-content .kv-button.ui-state-focus {
+	border:none;
+	background-color:#990033;
+	background-color:#7f7fb2;
+	color:#fff;
+}
+
+.veranstaltungskalender_dialog.ui-dialog .ui-widget-content .kv-button.ui-state-default:hover {
+	background-color:#990033;
+	color:#fff;
+}
+
+.veranstaltungskalender_dialog .kv-button.left {
+	float:left;
+}
+
+.veranstaltungskalender_dialog .kv-button.right {
+	float:right;
+}
+
+
+/****************** Allgemeines *****************/
+/* AB HIER */
+/* Ergänzungen Suchformular */
+.suchform .multifield .select_date {
+	display:inline-block;
+	width:66%;
+	max-width:100rem;
+	margin:0;
+	padding:0;
+
+}
+
+.suchform .select_date .col {
+	display:inline-block;
+	width:49%;
+	margin:0;
+	padding:0;
+}
+
+.suchform .select_date .col label {
+	width:12%;
+}
+#bottomcolumn .suchform .select_date .col label, .threecols .suchform .select_date .col label {
+	width:20%;
+}
+
+.suchform .select_date .col input {
+	width:88%;
+}
+#bottomcolumn .suchform .select_date .col input, .threecols .suchform .select_date .col input {
+	width:80%;
+}
+/* BIS HIER */
+
+
+
+/* Veranstaltungsreihe */
+.veranstaltungsreihe .veranstaltungsort {
+	margin-bottom:1.5em;
+}
+
+.veranstaltungsreihe .suchform.mak .programmpunkt_anzahl {
+	width:3em;
+}
+
+/* AB HIER */
+/* wie Warenkorb !!! */
+.veranstaltungsreihe .suchform.buchung {
+	width:100%;
+	padding:0;
+	background:none;
+}
+
+.veranstaltungsreihe .suchform.mak .radiolist_lanr {
+    list-style: none;
+    margin-left: 0;
+}
+
+.veranstaltungsreihe .suchform.mak .daten, .tx-kvbw-warenkorb .suchform.mak .zusatzinfo {
+    margin-left: 1.5em;
+    text-indent: 0;
+}
+
+.veranstaltungsreihe .suchform {
+    margin-bottom: 1.5em;
+}
+
+/* wie Warenkorb 
+.veranstaltungsreihe table.tabelle-hintergrund th {
+    background-color: #f1f1f1;
+    color: #3f3f3f;
+}*/
+
+
+/****************** Korrekturen ... *****************/
+
+@media (max-width: 70em) {
+	#bottomcolumn .messagebox {
+		width:auto;
+	}
+}

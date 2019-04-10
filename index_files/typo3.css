@@ -1,0 +1,647 @@
+/* Spezielles für typo3-Elemente und Plugins */
+
+
+/********************** Bilder **********************/
+.csc-textpic-image {
+	margin-bottom:1.5em;
+}
+
+.csc-textpic-center.csc-textpic-above .csc-textpic-image, .csc-textpic-center.csc-textpic-below .csc-textpic-image {
+	text-align:center;
+}
+
+.csc-textpic-right.csc-textpic-above .csc-textpic-image, .csc-textpic-right.csc-textpic-below .csc-textpic-image {
+	text-align:right;
+}
+
+.csc-textpic-left.csc-textpic-above .csc-textpic-image, .csc-textpic-left.csc-textpic-below .csc-textpic-image {
+	text-align:left;
+}
+
+
+.csc-textpic-intext-right .csc-textpic-image {
+	float:right;
+	margin:0 0 1em 1.25em;
+	max-width:33.33%;
+}
+
+.csc-textpic-intext-left .csc-textpic-image {
+	float:left;
+	margin:0 1.25em 1em 0;
+	max-width:33.33%;
+}
+
+.csc-textpic-intext-right-nowrap .csc-textpic-image {
+	float:right;
+	margin:0 0 1em 1.25em;
+	max-width:33.33%;
+}
+
+.csc-textpic-intext-left-nowrap .csc-textpic-image {
+	float:left;
+	margin:0 1.25em 1em 0;
+	max-width:33.33%;
+}
+
+/* Bilder hochkant */
+.bildhochkant .csc-textpic-intext-right .csc-textpic-image, .bildhochkant .csc-textpic-intext-left .csc-textpic-image, .bildhochkant .csc-textpic-intext-right-nowrap .csc-textpic-image, .bildhochkant .csc-textpic-intext-left-nowrap .csc-textpic-image {
+	max-width:33.33%;
+}
+
+
+.twocols .csc-textpic-intext-right .csc-textpic-image, .twocols .csc-textpic-intext-left .csc-textpic-image, .twocols .csc-textpic-intext-right-nowrap .csc-textpic-image, .twocols .csc-textpic-intext-left-nowrap .csc-textpic-image {
+	max-width:33.33%;
+}
+
+.twocols .bildhochkant .csc-textpic-intext-right .csc-textpic-image, .twocols .bildhochkant .csc-textpic-intext-left .csc-textpic-image, .twocols .bildhochkant .csc-textpic-intext-right-nowrap .csc-textpic-image, .twocols .bildhochkant .csc-textpic-intext-left-nowrap .csc-textpic-image {
+	max-width:25%;
+}
+
+/* Icons */
+.bildicon .csc-textpic-intext-right .csc-textpic-image, .bildicon .csc-textpic-intext-left .csc-textpic-image, .bildicon .csc-textpic-intext-right-nowrap .csc-textpic-image, .bildicon .csc-textpic-intext-left-nowrap .csc-textpic-image {
+	max-width:25%;
+}
+
+.bildicon.quer .csc-textpic-intext-right .csc-textpic-image, .bildicon.quer .csc-textpic-intext-left .csc-textpic-image, .bildicon.quer .csc-textpic-intext-right-nowrap .csc-textpic-image, .bildicon.quer .csc-textpic-intext-left-nowrap .csc-textpic-image {
+	max-width:33.33%;
+	width:33.33%;
+}
+
+.bildicon.quer img {
+	width:100%;
+}
+
+.bildicon.quer + .csc-default {
+	clear:both;
+}
+
+	
+/* Slider */
+.bxslider .csc-textpic-intext-right .csc-textpic-image, .bxslider .csc-textpic-intext-left .csc-textpic-image, .bxslider .csc-textpic-intext-right-nowrap .csc-textpic-image, .bxslider .csc-textpic-intext-left-nowrap .csc-textpic-image {
+	width:50%;
+	max-width:50%;
+}
+
+@media (max-width: 30em) { 
+	.bxslider .csc-textpic-intext-right .csc-textpic-image, .bxslider .csc-textpic-intext-left .csc-textpic-image, .bxslider .csc-textpic-intext-right-nowrap .csc-textpic-image, .bxslider .csc-textpic-intext-left-nowrap .csc-textpic-image {
+		width:100%;
+		max-width:100%;
+	}
+}
+
+
+/* mehrere Bilder .csc-textpic-imagerow ! */
+/* media-queries! */
+
+/* Bildunterschrift */
+/*.csc-textpic-image .csc-textpic-caption {
+	display:block;
+    font-size:0.875em;
+	line-height:1.25em;
+    text-align:center;
+}*/
+
+
+
+/********************** Menüs **********************/
+ul.csc-menu {
+	list-style:none;
+	margin-left:0;
+}
+
+ul.csc-menu li {
+}
+ul.csc-menu li:before {
+	content:"\00bb\00a0";
+}
+ul.csc-menu.themen li:before {
+	content:"";
+}
+
+
+/********************** Sitemap NEU **********************/
+.csc-sitemap a {
+	text-decoration:none;
+	color:#3f3f3f;
+}
+.csc-sitemap a:hover {
+	text-decoration:underline;
+	color:#6688cc;
+}
+
+.csc-sitemap ul {
+	margin-left:1.75em;
+	margin-bottom:0.5em;
+	line-height:2.25em;
+}
+
+.csc-sitemap li {
+	list-style:none;
+}
+
+.csc-sitemap li > a {
+	padding-left:14px;
+	background:url(../pics/pfeil-rechts.jpg) center left no-repeat;
+}
+
+.csc-sitemap > ul > li > a {
+	text-transform:uppercase;
+	color:#990033;
+	font-size:1.125em;
+}
+.csc-sitemap > ul > li > a:hover {
+	text-decoration:underline;
+	color:#6688cc;
+}
+
+.csc-sitemap > ul > li > ul > li > a {
+	text-transform:uppercase;
+}
+
+.csc-sitemap > ul > li > ul > li > ul li > a {
+	background:none;
+	padding-left:0;
+}
+.csc-sitemap > ul > li > ul > li > ul li > a:before {
+	content:"\00bb\00a0";
+	color:#990033;
+	font-size:1.25em;
+}
+
+.csc-sitemap > ul {
+	margin-left:1em;
+	margin-bottom:1.5em;
+}
+
+.csc-sitemap > ul > li > ul > li > ul {
+	font-size:0.875em;
+}
+
+/*.csc-sitemap > ul > li > ul > li {
+	margin-bottom:1.5em;
+}*/
+
+
+
+
+/********************** Sitemap ALT **********************/
+/* kann unter 7.6 gelöscht werden! */
+.tx-flseositemap-pi1 a {
+	text-decoration:none;
+	color:#3f3f3f;
+}
+.tx-flseositemap-pi1 a:hover {
+	text-decoration:underline;
+	color:#6688cc;
+}
+
+.tx-flseositemap-pi1 ul {
+	margin-left:1.75em;
+	margin-bottom:0.5em;
+	line-height:2.25em;
+}
+
+.tx-flseositemap-pi1 li {
+	list-style:none;
+}
+
+.tx-flseositemap-pi1 li > a {
+	padding-left:14px;
+	background:url(../pics/pfeil-rechts.jpg) center left no-repeat;
+}
+
+.tx-flseositemap-pi1 li.deep0 > a {
+	text-transform:uppercase;
+	color:#990033;
+	font-size:1.125em;
+}
+.tx-flseositemap-pi1 li.deep0 > a:hover {
+	text-decoration:underline;
+	color:#6688cc;
+}
+
+.tx-flseositemap-pi1 li.deep1 > a {
+	text-transform:uppercase;
+}
+
+.tx-flseositemap-pi1 ul.deep2 li > a {
+	background:none;
+	padding-left:0;
+}
+.tx-flseositemap-pi1 ul.deep2 li > a:before {
+	content:"\00bb\00a0";
+	color:#990033;
+	font-size:1.25em;
+}
+
+.tx-flseositemap-pi1 ul.deep0 {
+	margin-left:1em;
+	margin-bottom:1.5em;
+}
+
+.tx-flseositemap-pi1 ul.deep2 {
+	font-size:0.875em;
+}
+
+.tx-flseositemap-pi1 li.deep0 {
+	margin-bottom:1.5em;
+}
+
+
+
+/********************** News **********************/
+/* Detailview */
+.news.news-single {
+}
+
+.news.news-single .news-date {
+	float:left;
+}
+
+.news.news-single .news-date, .news.news-single .news-category, .news.news-single .news-category:before, .news.news-single .news-related-news-date {
+	color:#a1a1a1;
+	font-size:0.875em;
+}
+
+.news.news-single .news-category:before {
+	content:"\00a0|\00a0"; /* Space | Space */
+}
+
+.news.news-single h1 {
+	clear:both;
+	padding-top:0.5em;
+}
+
+.news.news-single .news-content {
+	margin-bottom:1.5em;
+	border-bottom:1px solid #c1c1c1;
+}
+
+.news.news-single .teaser-text {
+	font-weight:bold;
+}
+
+.news.news-single .news-list-tags {
+	list-style:none;
+	margin-left:0;
+	color:#a1a1a1;
+}
+
+.news.news-single .news-list-tags li {
+	display:inline;
+}
+
+.news.news-single .news-list-tags li:after {
+	content:"\00a0|\00a0"; /* Space | Space */
+}
+.news.news-single .news-list-tags li:last-child:after {
+	content:"";
+}
+
+/* Pagination */
+
+/* AB HIER */
+/* Suchformular */
+.news form > div {
+	margin:0;
+}
+/* BIS HIER */
+
+/********************** KQB-Logo **********************/
+.kqb .tooltip img {
+	width:2.5em;
+	height:auto;
+}
+
+.kqb .tooltip .tooltipcontent img {
+	width:100%;
+}
+
+.kqb .tooltip .tooltipcontent {
+	bottom:3.4em;
+	left:-0.625em;
+	width:18em;
+}	
+
+.kqb .tooltip .tooltipcontent:after {
+	left:1.3em;
+}	
+
+
+/********************** Last Update **********************/
+.user-recordupdate-pi1, .lastupdate {
+	clear:both;
+	text-align:right;
+	font-size:0.8125em;
+	color:#a1a1a1;
+	padding-top:3em;
+}
+
+.user-recordupdate-pi1 + #page-buttons, .lastupdate + #page-buttons {
+	/* nur wenn auch tatsächlich recordupdate davor steht! */
+	padding-top:0.5em;
+}
+
+
+/********************** Glossar **********************/
+.tx-glossary {
+	outline:none;
+}
+
+/* leider ohne Klasse aus der extension ... */
+dfn[title], acronym[title], abbr[title], dfn.tooltip, acronym.tooltip, abbr.tooltip {
+	font-style:normal;
+	border:none;
+	cursor:pointer;
+	cursor:help;
+	color:#6688cc;
+	text-decoration:none;
+}
+dfn[title]:hover, acronym[title]:hover, abbr[title]:hover, dfn.tooltip:hover, acronym.tooltip:hover, abbr.tooltip:hover {
+	color:#000066;
+	color:#6688cc;
+	text-decoration:none;
+}
+
+/* in link */
+.tx-glossary dfn {
+	font-style:normal;
+	border:none;
+	cursor:pointer;
+}
+.tx-glossary * {
+	border:none;
+	cursor:pointer;
+	color:#6688cc;
+	text-decoration:underline;
+}
+.tx-glossary:hover *, .tx-glossary:visited *, .tx-glossary dfn.tooltip:hover, .tx-glossary acronym.tooltip:hover, .tx-glossary abbr.tooltip:hover {
+	color:#000066;
+	cursor:pointer;
+	text-decoration:underline;
+}
+/* evtl. noch andere Elemente berücksichtigen? */
+
+/* Glossarliste */
+.tx-glossary-list .tx-glossary-abstract {
+	margin-bottom:1.5em; /* wie p */
+}
+
+.tx-glossary-list dt {
+	margin-top:1.5em;
+}
+.tx-glossary-list dt:first-child {
+	margin-top:0;
+}
+
+.tx-glossary-list .tx-glossary-abstract, .tx-glossary-list p {
+	margin-bottom:0.75em;
+}
+
+
+
+/********************** IGeL-Formular **********************/
+/* AB HIER */
+.suchform.igel {
+	background:none;
+	padding:0;
+}
+
+.suchform.igel fieldset {
+	margin-bottom:1.5em;
+}
+
+/* Platzprobleme bei 3 Spalten, für Börsen prüfen! */
+/*.suchform.igel fieldset label {
+	width:10em;
+}
+
+.suchform.igel input[type="text"] {
+	width:20rem;
+}
+
+.suchform.igel select {
+	width:20rem;
+}
+
+.suchform.igel .plzort div {
+	width:10em;
+}
+
+.suchform.igel input.plz {
+	width:4rem;
+}
+
+.suchform.igel input.ort {
+	width:15.5rem;
+}
+*/
+
+.suchform.igel .plakatvorschau {
+	margin-bottom:0;
+}
+
+.suchform.igel .plakatvorschau select {
+	width:3em;
+}
+
+.suchform.igel input[type=text] {
+	background-color:#f1f1f1;
+}
+/* BIS HIER */
+
+/****************  AdminTool ***************/
+.tx-kvbwdataadmintool-pi1 {
+}
+
+/****************  Direktkontakte ***************/
+.tx-kvbwcontactlist-pi1 {
+}
+
+
+/****************  Publikationen ***************/
+.tx-kvbwpublikationen-pi1 ul.publist {
+	list-style:none;
+	margin-left:0;
+}
+
+.tx-kvbwpublikationen-pi1 .record {
+	border-bottom:1px solid #c1c1c1;
+	margin-bottom:1.5em;
+	padding-bottom:1em;
+}
+
+.tx-kvbwpublikationen-pi1 h3 a {
+	color:#990033;
+	text-decoration:none;
+}
+
+.tx-kvbwpublikationen-pi1 .rightpic {
+}
+
+.tx-kvbwpublikationen-pi1 .rightpic img {
+	width:100%;
+	border:1px solid #c1c1c1;
+	box-sizing:border-box; /* Rahmen und Padding zählen zur Gesamtgröße */
+	-moz-box-sizing:border-box;
+}
+
+.tx-kvbwpublikationen-pi1 .pdflist ul, .tx-kvbwpublikationen-pi1 .beschreibung ul {
+	list-style:disc;
+}
+
+.tx-kvbwpublikationen-pi1 h3 {
+	margin-bottom:0.5em;
+}
+
+.tx-kvbwpublikationen-pi1 .content {
+	margin-top:1em;
+}
+.tx-kvbwpublikationen-pi1 .singleview .content {
+	margin-top:0;
+}
+
+.tx-kvbwpublikationen-pi1 .subtitle {
+	margin-bottom:0.5em;
+}
+
+
+/****************  Tab-Container Hack ***************/
+#tab-container .tabcontent h1 {
+	display:none;
+	margin:0;
+}
+
+
+/****************  PDF-Link-Center ***************/
+.tx-kvbwpdflinkcenter-pi1 .item-teaser p {
+	margin-bottom:0.5em;
+}
+
+.tx-kvbwpdflinkcenter-pi1 h3 {
+	margin-top:0;
+}
+
+
+/****************  Bildbox ***************/
+.tx-kvbwbildbox-pi1 .bild {
+	text-align:center;
+}
+	
+
+/**************** Video-Archiv ***************/
+/* besser Template anpassen! */
+.video-entry { 
+	margin-bottom:1em;
+}
+
+.tx_kvbwvideoarchiv-list p + h3 {
+	margin-top:2em;
+}
+
+
+/**************** Praxissitze ***************/
+dl.ausschreibungen {
+	margin-left:1.25em;
+	margin-bottom:1.5em;
+}
+
+.ausschreibungen dt {
+	display:list-item;
+	list-style-type:disc;
+	margin-top:1.5em;
+}
+.ausschreibungen dt:first-child {
+	margin-top:0;
+}
+
+.ausschreibungen dd {
+	margin-left:0;
+}
+
+
+/**************** Bilderslider ***************/
+.imgslider .bx-wrapper .bx-prev {
+	background-image: url(../images/controls2.png);
+}
+
+.imgslider .bx-wrapper .bx-next {
+	background-image: url(../images/controls2.png);
+}
+
+.imgslider .bx-wrapper .bx-controls-auto .bx-start {
+	background-image: url(../images/controls2.png);
+}
+
+.imgslider .bx-wrapper .bx-controls-auto .bx-stop {
+	background-image: url(../images/controls2.png);
+}
+
+/**************** Extension Druckbutton ***************/
+.tx-druckbutton-pi1 {
+	margin-bottom:1.5em;
+}
+
+
+/* AB HIER ergänzt */
+/**************** DMP-Map ***************/
+#google_map_canvas {
+	border-bottom:1.5em;
+}
+
+
+/**************** SOLR ? ***************/
+.tx-typoscript2ce {
+	position: relative;
+}
+.tx-typoscript2ce input.tx-solr-q { 
+	width: 90%;
+	margin-right: 0.5em;
+}
+.tx-typoscript2ce img {
+	position: absolute;
+	right: 1em;
+	top: 1.25em;
+}
+
+/****************  Tagcloud ***************/
+.tx-kvbwtagcloud-pi1 ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	padding-top:0.5em;
+	margin-bottom:1.5em;
+}
+#content_box_mitte .tx-kvbwtagcloud-pi1 ul {
+	margin:0;
+	padding:0;
+}
+
+.tx-kvbwtagcloud-pi1 ul li {
+	display:inline;
+	line-height:2.5em;
+	padding-right:1.5625rem; /*25px;*/
+}
+
+.tx-kvbwtagcloud-pi1 ul li a {
+	text-decoration:none;
+	outline:none;
+}
+.tx-kvbwtagcloud-pi1 ul li a:hover span {
+	text-decoration:underline;
+}
+
+
+/**************** Notfallpraxen ***************/
+.tx-notfallpraxen .tx-kvbwdataadmintool-pi1 h3 {
+	color:#333;
+	font-size:1em;
+	margin-bottom:0;
+	line-height:1.5em;
+}
+
+
+/**************** Cookie-Hinweis ***************/
+a.cc_more_info, a.cc_more_info:hover {
+	text-decoration:underline;
+}

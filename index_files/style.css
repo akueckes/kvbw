@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tx-kvbwtagcloud-pi1 {
+}
+
+.tx-kvbwtagcloud-pi1 ul {
+	list-style:none;
+	margin-left:0;
+}
+
+.tx-kvbwtagcloud-pi1 ul li {
+	display:inline;
+	line-height:2.5em;
+}
+
+.tx-kvbwtagcloud-pi1 ul li a {
+	text-decoration:none;
+	padding-right:1.5625rem; /*25px;*/
+	outline:none;
+	white-space:nowrap;
+}
+.tx-kvbwtagcloud-pi1 ul li a:hover span {
+	text-decoration:underline;
+}

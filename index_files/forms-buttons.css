@@ -1,0 +1,1021 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************************************/
+/********************* Formulare **********************/
+form {
+	margin-bottom:1.5em;
+}
+
+/*form.hintergrund, */.formbox { /* Formular mit Hintergrund */
+	background-color:#f1f1f1;
+	padding:0.9375em;
+	/*padding-bottom:0.5em;*/
+	margin-bottom:1.5em;
+}
+
+form.nomargin { 
+	margin-bottom:0;
+}
+
+form.vertiform { /* Label + Eingabe untereinander */
+}
+
+form.horizform { /* Label + Eingabe nebeneinander */
+}
+
+form.bigform { /* größere Eingabefelder */
+}
+
+form.labelbold { /* Labels fett */
+}
+
+form.buttonform { /* Formular dient als Link */
+	display:inline-block;
+	margin:0;
+}
+
+form.suchform { /* Zwischenlösung bis Börsen umgestellt sind */
+	background-color:#f1f1f1;
+	padding:0.9375em;
+	/*padding-bottom:0.5em;*/
+	margin-bottom:1.5em;
+}
+
+/****************** Form-Elemente ******************/
+/* Legend */
+legend, .legend/*, .vertiform .legend*/ {
+	margin-bottom:1em;
+	font-weight:bold;
+	line-height:1.5em;
+	font-size:1em;
+}
+
+.labelbold legend, .labelbold .legend/*, .vertiform .legend*/ {
+	color:#990033;
+}
+.labelbold .legend {
+	color:#990033;
+}
+
+.legend, .vertiform .legend {
+	margin-bottom:0;
+}
+
+legend.label, .legend.label {
+	font-weight:normal;
+	color:#3f3f3f;
+}
+
+.labelbold legend.label, .labelbold .legend.label {
+	font-weight:bold;
+}
+
+
+/* Label */
+label, .label {
+	color:#3f3f3f;
+	line-height:1.5em;
+}
+
+label.twolines, .label.twolines {
+	padding-top:1.5em;
+}
+
+@media (max-width: 60em) {
+	label.twolines, .label.twolines {
+		padding-top:0;
+	}	
+}
+
+.labelbold label, .labelbold .label {
+	font-weight:bold;
+}
+
+.vertiform label.legend, .vertiform .label.legend {
+	font-size:1em;
+}
+
+.vertiform label, .vertiform .label {
+	display:block;
+	font-size:0.9375em;
+	margin-bottom:0; 
+}
+.vertiform p.label {
+	font-size:1rem;
+}
+
+.horizform label, .horizform .label {
+	display:inline-block;
+	margin-bottom:0; 
+	padding:0.4em 0; 
+	line-height:1em;
+}
+
+.bigform label, .bigform .label {
+	display:block;
+	margin-bottom:0.25em; 
+}
+
+.suboption label, .suboption .label {
+	font-weight:normal;
+}
+
+label.check, .label.check {
+	display:inline;
+	cursor:pointer;
+	font-size:1em;
+	font-weight:normal;
+}
+
+label.bold, .label.bold {
+	font-weight:bold;
+}
+
+/* Labelzusätze */
+.labelinfo {
+	font-weight:normal;
+	color:#3f3f3f;
+}
+
+.mandatory {
+}
+
+
+
+/****************** Aufteilung ******************/
+/* vertikal */
+fieldset {
+}
+
+.fieldblock {
+	margin-bottom:1em;
+}
+
+.fieldblock .fieldblock:last-child {
+	margin-bottom:0;
+}
+
+form .row .column { /* Abstand über fieldblock setzen! */
+	margin-bottom:0;
+}
+
+
+/* horizontal */
+.horizform .labelblock {
+	clear:left;
+	float:left;
+	width:13em;
+	/*max-width:15em;*/
+}
+.horizform .inputblock {
+	margin-left:13em;
+	padding-left:0.5em;
+}
+
+
+@media (max-width: 35em) {
+	.horizform .labelblock {
+		float:none;
+		width:auto;
+	}
+	.horizform .inputblock {
+		margin-left:0;
+		padding-left:0;
+	}
+}
+
+
+.twocolblock, .threecolblock {
+	*zoom: 1;
+}
+.twocolblock:after, .threecolblock:after {
+	content: " ";
+	display: table;
+	clear: both;
+} 
+
+.anschrift { /* 80:20 */
+}
+.plzort { /* 20:80 */
+}
+.halb { /* 50:50 */
+}
+.drittel { /* 33:66 */
+}
+.zweidrittel { /* 66:33 */
+}
+
+/* halb-halb */
+.twocolblock .colleft, .twocolblock .colright {
+	float:left;
+	width:50%;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box;
+}
+
+.twocolblock .colleft {
+	padding-right:0.3em;
+}
+
+.twocolblock .colright {
+	padding-left:0.3em;
+}
+
+/* Ort + PLZ */
+.twocolblock.plzort .colleft {
+	/*min-width:4.5em;*/
+	width:20%
+}
+
+.twocolblock.plzort .colright {
+	width:80%;
+}
+
+/* Straße + Hausnr. */
+.twocolblock.anschrift .colleft {
+	/*min-width:4.5em;*/
+	width:80%;
+}
+
+.twocolblock.anschrift .colright {
+	width:20%
+}
+
+/* Bestellnummer 1/3 2/3 */
+.twocolblock.drittel .colleft {
+	width:33.33%;
+}
+
+.twocolblock.drittel .colright {
+	width:66.66%
+}
+
+/* 2/3 1/3 */
+.twocolblock.zweidrittel .colleft {
+	width:66.66%;
+}
+
+.twocolblock.zweidrittel .colright {
+	width:33.33%
+}
+
+/* dreispaltig */
+.threecolblock .col {
+	float:left;
+	width:33.33%;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box;
+}
+
+.threecolblock .col:nth-child(1){
+	padding-right:0.4em;
+}
+.threecolblock .col:nth-child(2){
+	padding-right:0.2em;
+	padding-left:0.2em;
+}
+.threecolblock .col:nth-child(3){
+	padding-left:0.4em;
+}
+
+
+@media (max-width: 30em) {
+	.twocolblock .colleft, .twocolblock .colright,
+	.twocolblock.plzort .colleft, .twocolblock.plzort .colright,
+	.twocolblock.anschrift .colleft, .twocolblock.anschrift .colright,
+	.twocolblock.drittel .colleft, .twocolblock.drittel .colright,
+	.twocolblock.zweidrittel .colleft, .twocolblock.zweidrittel .colright {
+		float:none;
+		width:auto;
+	}
+
+	.twocolblock .colleft, .twocolblock .colright {
+		padding:0;
+	}
+	
+	.fieldblock .colleft {
+		margin-bottom:1em;
+	}
+}
+
+
+/* Tabellenformular */
+.tableform {
+	display: table; 
+	border-collapse:collapse; 
+}
+
+.tableform .tablerow {
+	display:table-row;
+}
+
+.tableform .tableheaderrow {
+}
+
+.tableform .tablerow .tablecell {
+	display:table-cell;
+	padding:0.2em 0.2em;
+	vertical-align:middle;
+}
+.tableform .tablerow .tablecell:first-child {
+	padding-left:0;
+}
+
+.tableform .tablerow .col5 {
+	width:5%;
+}
+.tableform .tablerow .col10 {
+	width:10%;
+}
+.tableform .tablerow .col15 {
+	width:15%;
+}
+.tableform .tablerow .col20 {	
+	width:20%;
+}
+.tableform .tablerow .col25 {	
+	width:25%;
+}
+.tableform .tablerow .col33 {	
+	width:33%;
+}
+.tableform .tablerow .col40 {	
+	width:40%;
+}
+.tableform .tablerow .col50 {	
+	width:50%;
+}
+.tableform .tablerow .col60 {	
+	width:60%;
+}
+.tableform .tablerow .col70 {	
+	width:70%;
+}
+.tableform .tablerow .col75 {	
+	width:75%;
+}
+
+.tableform .tablerow .colicon { /* quadratische Icons */
+	max-width:2em;
+}
+.tableform .tablerow .coltooltip { /* für Tooltips Info */
+	max-width:20px;
+}
+
+.tableform .tablerow .tablecell * {
+	vertical-align:middle;
+}
+
+.tableform .tablerow .colicon img {
+	/*max-height:1.75em;*/
+	min-width:2em;
+}
+
+
+/****************** Eingabefelder ******************/
+input[type="text"], 
+input[type="date"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="number"],
+textarea, 
+select {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	border:none;
+	border:1px solid #c1c1c1;
+	width:100%;
+	padding:0.2em 0.3em; 
+	margin:0;
+	box-sizing:border-box; /* Rahmen und Padding zählen zur Gesamtgröße  */
+	-moz-box-sizing:border-box;
+}
+
+.valuefield { /* Fake Eingabefeld */
+    display:inline-block;
+    /*font-size: 0.875em;
+    line-height: 1.25em;*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	/*border:1px solid #c1c1c1;
+	border: none;*/
+	border:1px solid #fff;
+	width:100%;
+    /*max-width:30rem;*/
+	padding:0.2em 0.3em; 
+	margin:0;
+	box-sizing:border-box; /* Rahmen und Padding zählen zur Gesamtgröße  */
+	-moz-box-sizing:border-box;
+    background-color: #fff;
+}
+
+
+.bigform input[type="text"], 
+.bigform input[type="date"], 
+.bigform input[type="email"], 
+.bigform input[type="tel"], 
+.bigform input[type="number"],
+.bigform textarea, 
+/*.bigform select,*/
+.bigform .valuefield {
+	padding:0.5em 0.4em; 
+}
+.bigform select {
+	padding:0.45em 0.4em; 
+}
+
+.vertiform input[type="text"], 
+.vertiform input[type="date"], 
+.vertiform input[type="email"], 
+.vertiform input[type="tel"], 
+.vertiform input[type="number"],
+.vertiform textarea, 
+.vertiform select,
+.vertiform .valuefield {
+	display:block;
+}
+
+.horizform input[type="text"], 
+.horizform input[type="date"], 
+.horizform input[type="email"], 
+.horizform input[type="tel"], 
+.horizform input[type="number"],
+.horizform textarea, 
+.horizform select,
+.horizform .valuefield {
+	margin-bottom:0.5em;
+}
+
+input[type="text"]:active, input[type="text"]:focus,
+input[type="date"]:active, input[type="date"]:focus,
+input[type="email"]:active, input[type="email"]:focus,
+input[type="tel"]:active, input[type="tel"]:focus,
+input[type="number"]:active, input[type="number"]:focus,
+textarea:active, textarea:focus,
+select:active, select:focus {
+	border:1px solid #990033;
+}
+
+input {
+}
+
+input.smallinput, .smallinput input { /* Eingabefeld für ein Zeichen */
+	width:1.5em;
+	/*font-size:0.875em;*/
+	margin-bottom:1px;
+}
+
+textarea {
+	height:6em;
+}
+textarea.threelines {
+	height:10.15em; /* ca. 3 Zeilen */
+}
+.bigform textarea.threelines {
+	height:12.4em; /* ca. 3 Zeilen */
+}
+
+select {
+	padding:0.125em 0.25em; /* Höhenausgleich */
+}
+
+
+input[type="submit"], input[type="reset"], input[type="button"], input[type="image"] {
+	border:none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	vertical-align:baseline;
+}
+
+
+/****************** Checkboxen- / Radiobutton-Listen ******************/
+.optionlist {
+	list-style:none;
+	margin:0 !important;
+	padding:0.15em 0; /* Höhenausgleich */
+}
+
+.horizlist { /* Optionen nebeneinander */
+}
+
+.vertilist { /* Optionen untereinander */
+}
+
+.optionlist li {
+	line-height:1.5em;
+}
+
+.horizlist li {
+	display:inline;
+	margin-right:1.5em;
+}
+.horizlist li:last-child {
+	margin-right:0;
+}
+
+.suboption {
+	margin-left:1.45em;
+}
+.optionlist .suboption {
+	list-style:none;
+	margin:0;
+	margin-left:1.45em;
+	padding:0.15em; /* Höhenausgleich */
+}
+
+.optionlist p {
+	margin-bottom:0;
+}
+.optionlist p.fieldblock {
+	margin-bottom:1em;
+}
+
+.option { 
+	/* einzelne Option Text bei mehreren Zeilen gut ausgerichtet */
+	/* Achtung bei anderen Schriftgrößen! */
+	margin-left:25px; /* 1.55em */
+	text-indent:-25px; /* 1.55em */
+}
+
+
+.noleftmargin {
+	margin-left:0 !important;
+	padding:0 !important;
+}
+
+
+/*********************** andere Dinge für Formulare anpassen **********************/
+/* Tooltips Hintergrundfarbe anpassen */
+.formbox .tooltip .tooltipcontent {
+    background-color:#e1e1e1;
+}
+.formbox .tooltip .tooltipcontent:after {
+	border-top-color:#e1e1e1;
+}
+
+/* Abschneiden vom (i) vermeiden */
+.vertiform .tooltip { /* nocht schön, aber funktioniert ... bessere Lösung? */
+	font-size:1rem;
+}
+
+
+/* Tooltip Infobutton */
+.suchform.mak .tooltip.info { /* HIER Sinn? */
+	font-size:1rem;
+	margin-bottom:0;
+}
+
+
+/* blöde Formatierung aus dem Fluid */
+label p {
+	display:inline;
+}
+
+
+/*********************** Fehler **********************/
+.formerror {
+}
+
+.formerror label, .formerror .label, label.formerror, .formerror legend, .formerror .legend, legend.formerror {
+	color:#b70831;
+}
+
+.formerror input, input.formerror, .formerror textarea, textarea.formerror, .formerror select, select.formerror{
+	border-color:#b70831;
+	background-color:#f4dae0;
+}
+
+.formerror .suboption label, .formerror .suboption .label, .formerror .suboption legend, .formerror .suboption .legend {
+	color:#3f3f3f;
+}
+
+.formerror .suboption input, .formerror .suboption textarea, .formerror .suboption select {
+	border-color:#c1c1c1;
+	background-color:#fff;
+}
+
+/******************************************************/
+/*********************** Buttons **********************/
+/* erst mal alles auf den gleichen Stand bringen */
+/*input[type="button"], input[type="submit"], input[type="reset"], button, a*/.kv-button, .linkbutton, .kv-button-blau {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	vertical-align:baseline;
+	border:none;
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	display:inline-block;
+	line-height:1.5em;
+	color:#3f3f3f;
+	cursor:pointer;
+	background:none;
+}
+
+button::-moz-focus-inner, 
+input[type="button"]::-moz-focus-inner, 
+input[type="submit"]::-moz-focus-inner, 
+input[type="reset"]::-moz-focus-inner {
+	/* Größe ausgleichen */
+	padding: 0 !important;
+	border: 0 none !important;
+}
+
+
+.kv-button, .kv-button-blau /*spezielle Formatierung für RTE */ {
+	width:auto;
+	font-size:0.875em;
+	font-family:/*"MS Sans Serif",*/Arial, Helvetica, sans-serif;
+	padding:0.8125em 2.8em;
+	background-color:#990033;
+	color:#fff;
+	text-transform:uppercase;
+	letter-spacing:0.05em; /* Zeichenabstand für bessere Lesbarkeit */
+	letter-spacing:normal;
+	font-weight:bold;
+	cursor:pointer;
+	text-decoration:none;
+	font-stretch:normal;
+	margin-right:0.5em; /* anstelle unten linker margin */
+	margin-bottom:0.75em;
+}
+a.kv-button, button > a, .kv-button > a, a.kv-button-blau {
+	color:#fff;
+	text-decoration:none;
+}
+/*.kv-button + .kv-button {
+	margin-left:0.5em;
+} nicht gut bei Umbruch ... */
+
+.kv-button.blau, .kv-button-blau {
+	background-color:#7f7fb2;
+}
+
+.kv-button.hellblau, .kv-button:hover, .kv-button-blau:hover {
+	background-color:#d9d9e8;
+	color:#000066;
+}
+.kv-button.hellblau:hover {
+	background-color:#7f7fb2;
+	color:#fff;
+}
+
+.kv-button.inaktiv {
+	background-color:#f1f1f1;
+	color:#7f7fb2;
+	cursor:default;
+}
+
+.kv-button.klein {
+	font-size:0.75em;
+	padding:0.5em 1em;
+	/*font-weight:normal;*/
+}
+
+/* Vor- und Zurück-Button */
+.kv-button.next, .button.next {
+	float:right;
+	margin-right:0;
+	margin-left:0.75em;
+}
+.kv-button.prev, .button.prev {
+	float:left;
+	margin-left:0;
+	margin-right:0.75em;
+}
+
+.next .kv-button, .prev .kv-button {
+	margin-right:0;
+	margin-left:0;
+}
+
+/* Box für Buttons */
+.buttons, .floatbuttons {
+	padding-top:0.5em;
+}
+.buttons:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+/* Buttons als Links */
+.linkbutton {
+	color:#6688cc;
+	display:inline;
+	line-height:inherit;
+	text-decoration:underline;
+}
+.linkbutton:hover {
+	color:#000066;
+}
+.infobox .morelink .linkbutton {
+    padding:0 0.9375em;
+}
+
+
+/* Buttons als normaler Inhalt */
+.sortbutton {
+	padding:0;
+	margin:0;
+	border:none;
+	vertical-align:baseline;
+	cursor:pointer;
+	font-size:1rem;
+	line-height:1.5em;
+	text-align:left;
+	color:#3f3f3f;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: transparent;
+}
+a.sortbutton {
+	padding-left:4px;
+}
+
+
+/* Bildbuttons */
+.kv-button.bildbutton, .kv-button.iconbutton {
+	line-height:1.75rem;
+    padding:0.5em 1em;
+    background-color:#d9d9e8;
+    color:#000066;
+    font-weight:normal;
+}
+.kv-button.bildbutton:hover, .kv-button.iconbutton:hover {
+    background-color:#7f7fb2;
+    color:#fff;
+}
+
+.kv-button.iconbutton {
+	padding-left:35px;
+	border-left:1em solid #d9d9e8;
+}
+.kv-button.iconbutton:hover {
+	border-color:#7f7fb2;
+}
+
+.kv-button.bildbutton a {
+    color:#000066;
+}
+.kv-button.bildbutton a:hover, .kv-button.bildbutton:hover a, .kv-button.iconbutton:hover a {
+    color:#fff;
+}
+
+.kv-button.bildbutton img {
+	max-height:1.625rem;
+	vertical-align:middle;
+}
+
+
+/* Link mit Icon ohne Buttonform */
+.iconlink {
+}
+
+.iconlink img {
+	max-height:1.25rem;
+	vertical-align:middle;
+}
+
+
+/* Löschbutton */
+.kv-button.delete-button {
+	display:inline-block;
+	width:19px;
+	height:25px;
+	padding:0;
+	background:none;
+	background:url(../pics/muelleimer.png) center left no-repeat;
+	text-indent:-9999px;
+	color:#000066;
+}
+.kv-button.delete-button:hover {
+	background:none;
+	background:url(../pics/muelleimer.png) center left no-repeat;
+}
+
+
+/* normaler Text in Formular Submit-Button */
+.textbutton {
+	padding:0;
+	margin:0;
+	font-size:inherit;
+	color:inherit;
+	font:inherit;
+	white-space:normal;
+	text-align:inherit;
+	cursor:pointer;
+	background-color: transparent;
+}
+.textbutton:hover {
+	/*text-decoration:underline;*/
+}
+
+
+/* Seitenblätter-Buttons */
+.pagination {
+	font-family:"Calluna", Georgia, "Times New Roman", Times, serif; /* :Calluna-Regular, Georgia, "Times New Roman", Times, serif; */
+	margin-bottom:1.5em;
+	margin-left:0;
+	list-style:none;
+}
+.pagination:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.pagination * {
+	list-style:none;
+}
+
+.pagination form {
+	background:none;
+	padding:0;
+}
+
+.pagination .kv-button {
+	float:left;
+	margin-right:1px;
+	margin-left:0;
+	font-family:"Calluna", Georgia, "Times New Roman", Times, serif; /* :Calluna-Regular, Georgia, "Times New Roman", Times, serif; */
+	font-size:1.25rem;
+	line-height:1em;
+	padding:0.4rem 0.75rem 0.6rem 0.75rem;
+	background-color:#bfbfd9; /* dunkleres hellblau wegen weisser Schrift */
+	text-transform:none;
+}
+.pagination .kv-button.aktiv, .pagination .kv-button:hover {
+	background-color:#7f7fb2;
+	color:#fff;
+}
+.pagination .kv-button.inaktiv {
+	background-color:#f1f1f1;
+	color:#a1a1a1; 
+	cursor:default;
+}
+
+.pagination .kv-button.prev-button, .pagination .kv-button.next-button {
+	font-size:0.875em;
+	font-weight:normal;
+}
+
+.pagination .kv-button.prev-button:before, .pagination .kv-button.next-button:after {
+	font-size:1.25rem;
+	font-weight:bold;
+	line-height:1em;
+}
+.pagination .kv-button.prev-button:before {
+	content:"\00ab\00a0";
+}
+.pagination .kv-button.next-button:after {
+	content:"\00a0\00bb";
+}
+
+.pagination .kv-button a {
+	color:#fff;
+}
+.pagination .kv-button.inaktiv a {
+	color:#a1a1a1; 
+}
+
+
+/* Index-Buttons ABC-Navi */
+.abcindex {
+	list-style:none;
+	margin-left:0;
+	font-family:"Calluna", Georgia, "Times New Roman", Times, serif; /* :Calluna-Regular, Georgia, "Times New Roman", Times, serif; */
+	line-height:1em;
+	/*font-size:1.25rem;*/
+}
+.abcindex {
+	*zoom: 1;
+}
+.abcindex:after {
+	content: " ";
+	display: table;
+	clear: both;
+} 
+
+.abcindex .abcbutton {
+	float:left;
+	border-left:1px solid #fff;
+	border-bottom:1px solid #fff;
+}
+.abcindex .abcbutton:nth-child(16) {
+	clear: left; /* ACHTUNG: geht nicht über die volle Breite, bricht nach 16 Elementen um!!! */
+}
+
+.abcindex .abcbutton a {
+	text-decoration:none;
+	display:block;
+	background-color:#bfbfd9;
+	color:#fff;
+	/*padding:0.5rem 0.5rem 0.4rem 0.5rem;*/
+	padding:0.5em 0 0.35em 0;
+	width:1.8em;
+	text-align:center;
+}
+.abcindex .abcbutton a:hover {
+	background-color:#7f7fb2;
+}
+
+@media (max-width: 38em) {
+	.abcindex .abcbutton:nth-child(16) {
+		clear:none; 
+	}
+}
+
+
+/*****************************************************************/
+/*********************** Fortschrittsbalken **********************/
+.fortschrittstatus {
+	list-style:none;
+	margin-left:0;
+	margin-bottom:1.5em;
+}
+.fortschrittstatus {
+	*zoom: 1;
+}
+.fortschrittstatus:after {
+	content: " ";
+	display: table;
+	clear: both;
+} 
+
+.fortschrittstatus .schritt {
+	float:left;
+	margin:0;
+	padding:0;
+	font-size:0.9em;
+}
+.fortschrittstatus .schritt.aktiv {
+}
+.fortschrittstatus.col4 .schritt {
+	width:25%;
+}
+.fortschrittstatus.col5 .schritt {
+	width:20%;
+}
+
+.fortschrittstatus .schritt .status {
+	display:block;
+	padding-top:50px;
+	padding-bottom:0.25em;
+	text-align:center;
+	text-decoration:none;
+	color:#a1a1a1;
+	text-transform:uppercase;	
+	background-position:center top;
+	background-repeat:no-repeat;
+	border-bottom:2px solid #c1c1c1;
+}
+.fortschrittstatus .schritt.aktiv .status {
+}
+.fortschrittstatus .schritt.aktiv .status, .fortschrittstatus .schritt a.status:hover {
+	color:#7f7fb2;
+	color:#3f3f3f;
+	border-color:#7f7fb2;
+}
+.fortschrittstatus .schritt.overview .status {
+	background-image:url(../pics/checkout-uebersicht.png);
+}
+.fortschrittstatus .schritt.overview.aktiv .status, .fortschrittstatus .schritt.overview a.status:hover {
+	background-image:url(../pics/checkout-uebersicht-aktiv.png);
+}
+.fortschrittstatus .schritt.datainput .status {
+	background-image:url(../pics/checkout-daten.png);
+}
+.fortschrittstatus .schritt.datainput.aktiv .status, .fortschrittstatus .schritt.datainput a.status:hover {
+	background-image:url(../pics/checkout-daten-aktiv.png);
+}
+.fortschrittstatus .schritt.checkorder .status {
+	background-image:url(../pics/checkout-ueberpruefen.png);
+}
+.fortschrittstatus .schritt.checkorder.aktiv .status, .fortschrittstatus .schritt.checkorder a.status:hover {
+	background-image:url(../pics/checkout-ueberpruefen-aktiv.png);
+}
+.fortschrittstatus .schritt.finish .status {
+	background-image:url(../pics/checkout-fertig.png);
+}
+.fortschrittstatus .schritt.finish.aktiv .status, .fortschrittstatus .schritt.finish a.status:hover {
+	background-image:url(../pics/checkout-fertig-aktiv.png);
+}
+.fortschrittstatus .schritt.working .status {
+	background-image:url(../pics/checkout-verarbeiten.png);
+}
+.fortschrittstatus .schritt.working.aktiv .status, .fortschrittstatus .schritt.working a.status:hover {
+	background-image:url(../pics/checkout-verarbeiten-aktiv.png);
+}
+.fortschrittstatus .schritt.personaldata .status {
+	background-image:url(../pics/checkout-personendaten.png);
+}
+.fortschrittstatus .schritt.personaldata.aktiv .status, .fortschrittstatus .schritt.personaldata a.status:hover {
+	background-image:url(../pics/checkout-personendaten-aktiv.png);
+}
+
+
+
+

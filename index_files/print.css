@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {font-size: 10pt; line-height: 1.5em; }
+
+#servicemenue , #search, #menuebar, #breadcrumb, #catmenue, #page-buttons, #social-media, #footer .row, .bx-controls, button {
+	display:none;
+}
+
+#breadcrumb + div {
+	display: block;
+	width: 100%;
+}
+.colwrap {
+	position:relative;
+	display:block;
+	width: 100%;
+}
+
+/* */
+
+a.extern[href]:after {
+ content:" <"attr(href)">";
+ font-style:italic;
+ size:80%;
+} 
+
+a.email[href]:after {
+ content:" <"attr(href)">";
+ font-style:italic;
+ size:80%;
+} 
+
+article.textinfobox {
+	border-color:#7f7fb2;
+	border-width:3px;
+	border-style:solid;
+	background-color:#FFF;
+}
+
+article.textinfobox.achtung {
+	border-color:#990033;
+	border-width:3px;
+	border-style:solid;
+	background-color:#FFF;
+}
+
+#tab1 {
+	border-color:#000;
+	border-width:3px;
+	border-style:solid;
+	background-color:#FFF;
+}
+
+footer#footer {
+	background-color:#FFF;
+}
+
+table { 
+	page-break-inside: avoid; 
+}
+
+section.asu.infobox, section.ergo.infobox, section.newsletter.infobox {
+	margin-bottom:12em;
+}
+
+section.kontakt.infobox {
+	margin-bottom:3em;
+}
+
+.ergo.infobox, .video.infobox, .kontakt.infobox, .newsletter.infobox, .infobox.themenbuttons, div.bx-wrapper, .asu.infobox, dl.infobox, .infobox.kontaktbox, div.infobox {
+	padding:0;
+	padding-bottom:1.3em;
+	margin:0;
+}
+
+.themenbuttons ul {
+	text-align:left;
+}
+
+#tab-container { 
+	min-height:20em;
+}
+
+/* Logo */
+#logo {
+	width:100%;
+	height:auto;
+	text-align:right;
+}
+
+#logo a {
+	display:inline;
+	width:auto;
+	height:auto;
+	background:none;
+}
+
+#logo img {
+	display:inline;
+	/*width:235px;*/
+	width:82mm;
+	height:auto;
+	/*height:22mm;*/
+}
+
+#logo span {
+	display:none;
+}
+
+form {
+	display: none;
+}
+
+
+/* ASU / Börsen */
+.resultlist .header {
+	display:none !important;
+}
+
+.resultlist .auswahl {
+	display:none !important;
+}
+
+.resultlist .details {
+	display:none !important;
+}
+
+.suchparameter {
+	display:none;
+}
+.resultlist li.resultrow {
+	clear:both;
+	border-top: 1px solid #999;
+	page-break-inside: avoid; 
+}
+
+/* FAQs */
+.tx-kvbwfaq-pi1 .slidebox {
+	page-break-inside: avoid; 
+}
+.tx-kvbwfaq-pi1 .slidecontent {
+	padding: 0;
+	margin: 0;
+}
+.tx-kvbwfaq-pi1 .slidebox table[summary]::before {
+	content:  attr(summary);
+	display: table-caption;
+	font-style:italic;
+	size:80%;
+}

@@ -1,0 +1,470 @@
+@charset "utf-8";
+/* CSS Document */
+
+.boerse {
+}
+
+/*********************** Suchformular ***********************/
+.nohits {
+	color:#818181;
+}
+
+.chiffreintern {
+	/*background-color:#DB7B7D; noch formatieren !!! */
+}
+
+
+
+/*********************** Karte ***********************/
+/* allgemeine Formatierungen für Google-Maps-Anwendungen ins main übernehmen! */
+.googlekarte {
+	margin-bottom:1.5em
+}
+
+.googlekarte #map {
+	width:100%;
+}
+.boerse #map {
+	height:400px;
+}
+
+.googlekarte #legende {
+	background-color:#fff;
+	padding:0.5rem 0.75rem 0.75rem 0.5rem;
+	margin-left:0.5rem;
+}
+
+.googlekarte #legende ul {
+	margin:0;
+	list-style:none;
+}
+
+.googlekarte #legende img {
+	width:1.25rem;
+	/*vertical-align:text-top;*/
+	vertical-align:middle;
+}
+
+/* Infobox in Map */
+.googlekarte .mapinfobox {
+	/*width:30em;*/
+	width:26em;
+	line-height:1.25em;
+	margin-right:2em; /* für Scrollbalken etc. */
+}
+
+.googlekarte .mapinfobox h3, .googlekarte .mapinfobox table, .googlekarte .mapinfobox p {
+	margin-bottom:0.6em;
+}
+
+.googlekarte .mapinfobox dl {
+	padding-bottom:0.6em;
+}
+
+.boerse .googlekarte .mapinfobox .morelink {
+	/*font-size:1.25em;*/
+}
+
+
+/*********************** Ergebnisliste ***********************/
+.result-list {
+	list-style:none;
+	margin-left:0;
+	margin-bottom:1em;
+}
+
+.result-list.boxlist {
+	*zoom: 1;
+}
+.result-list.boxlist:after {
+	content: " ";
+	display: table;
+	clear: both;
+} 
+
+.result-list.rowlist {
+}
+
+/* Teaseransicht */ /* oder Spaltenaufteilung über Position im Template regulieren! */
+.teaserview .result-list.boxlist .result {
+	float:left;
+	width:33.3%;
+}
+
+.teaserview .result-list.boxlist .result:nth-child(3n) .box {
+	/* 3. Box */
+	/*margin:0 0 1.5em 0.625em;*/
+	margin:0 0 1.5em 0.8em;
+}
+.teaserview .result-list.boxlist .result:nth-child(3n+1) .box {
+	/* 1. Box */
+	/*margin:0 0.625em 1.5em 0;*/
+	margin:0 0.8em 1.5em 0;
+}
+.teaserview .result-list.boxlist .result:nth-child(3n+2) .box {
+	/* 2. Box, mittlere */
+	/*margin:0 0.625em 1.5em 0.625em;*/
+	margin:0 0.4em 1.5em 0.4em;
+}
+
+/*.teaserview .result-list.boxlist .box {
+	height:15rem;
+}*/
+
+@media (max-width: 70em) {
+	.teaserview .result-list.boxlist .result {
+		float:none;
+		width:auto;
+	}
+
+	.teaserview .result-list.boxlist .result .box {
+		margin:0 0 1.5em 0 !important;
+	}
+}
+
+.teaserview .iconbox {
+	background-position:top right;
+	background-repeat:no-repeat;
+	background-size:2.5em;
+}
+.teaserview .iconbox.praxenstellen_boerse {
+	background-image:url(../pics/boerse-icon-praxis-stellen.png);
+}
+.teaserview .iconbox.famulatur_boerse {
+	background-image:url(../pics/boerse-icon-famulatur.png);
+}
+.teaserview .iconbox.raum_boerse {
+	background-image:url(../pics/boerse-icon-raeume.png);
+}
+.teaserview .iconbox.geraete_boerse {
+	background-image:url(../pics/boerse-icon-geraete.png);
+}
+.teaserview .iconbox.weiterbildungsstelle_boerse, .teaserview .iconbox.weiterbildungsstelle_kh_boerse {
+	background-image:url(../pics/boerse-icon-weiterbildung.png);
+}
+
+
+/* Ergebnisliste */
+.listview .result-list.boxlist .result {
+	float:left;
+	width:50%;
+}
+
+.listview .result-list.boxlist .result:nth-child(2n) .box {
+	/* 2. Box */
+	/*margin:0 0 1.5em 0.625em;*/
+	margin:0 0 1.5em 0.6em;
+}
+.listview .result-list.boxlist .result:nth-child(2n+1) .box {
+	/* 1. Box */
+	/*margin:0 0.625em 1.5em 0;*/
+	margin:0 0.6em 1.5em 0;
+}
+
+/*.listview */.result-list.boxlist .box {
+	height:17.5rem;
+}
+
+@media (max-width: 60em) {
+	.listview .result-list.boxlist .result {
+		float:none;
+		width:auto;
+	}
+
+	.listview .result-list.boxlist .result .box {
+		margin:0 0 1.5em 0 !important;
+	}
+}
+
+
+
+/* Ergebnis */
+.result-list .result.chiffre .infobox {
+}
+.result-list .result.foerderung .infobox {
+}
+.result-list .result.hervorgehoben .infobox {
+	background-color:#d9d9e8;
+}
+.result-list .result.merkliste .infobox {
+	background-color:#d9d9e8;
+}
+
+.result-list .result .kategorie {
+	color:#818181;
+}
+
+.result-list .result .icon {
+	float:right;
+}
+
+.result-list .result .titel {
+	font-size:1.5em;
+	font-family:"Calluna", Georgia, "Times New Roman", Times, serif; /* :Calluna-Regular, Georgia, "Times New Roman", Times, serif; */
+	color:#990033;
+	font-weight:normal;
+	margin-top:0;
+}
+
+.result-list .result .merkmale dt {
+	float:left;
+	clear:left;
+	margin-right:0.25em;
+}
+
+.result-list .result .merkmale dd {
+}
+
+.infobox dl {
+	margin-bottom:1em;
+}
+
+
+/* Ergebnisboxen */
+.result-list.boxlist {
+	font-size:0.875em;
+}
+
+.result-list.boxlist .result .merkmale {
+	position:absolute;
+	left:0;
+	bottom:1em;
+	width:100%;
+	box-sizing:border-box; /* Rahmen und Padding zählen zur Gesamtgröße */
+	-moz-box-sizing:border-box;
+	padding:0 0.9375em;
+	/*line-height:1.4em;*/
+}
+
+.result-list.boxlist .result .beschreibung {
+	line-height:1.35em;
+}
+
+
+
+/* Ergebniszeilen */
+.result-list.rowlist {
+}
+
+.result-list.rowlist .result {
+	border-bottom:1px solid #c1c1c1;
+	padding:0.625em 0;
+}
+
+.result-list.rowlist .box {
+	padding:0;
+	background:none !important;
+	margin:0;
+}
+
+.result-list.rowlist .box .morelink {
+	position:static;
+	width:auto;
+	padding:0;
+}
+
+.result-list.rowlist .box .morelink a {
+	padding:0;
+}
+
+
+/* Sonstiges */
+.newicon.iconlink img {
+	max-height:2rem;
+}
+
+/*********************** Filterform ***********************/
+.filterform {
+}
+
+/* AB HIER 
+.filterform legend {
+	margin-bottom:0;
+}
+
+.filterform fieldset {
+	margin-bottom:1em;
+}
+
+.filterform fieldset div:last-child {
+	margin-bottom:0;
+}
+
+.filterform ul {
+	margin-bottom:0;
+	padding:0;
+}*/
+
+.moreoptions {
+	position:relative;
+	margin-bottom:0;
+	padding-bottom:1.25em;
+}
+
+.moreoptions .showmoreoptions {
+	font-size:0.9em;
+	text-decoration:underline;
+	position:absolute;
+	bottom:0;
+	right:0;
+	/*padding-right:15px;
+}
+.filterform .moreoptions.closed .showmoreoptions {
+	background:url(../pics/pfeil-rechts-hellgrau.png) right center no-repeat;
+}
+.filterform .moreoptions.open .showmoreoptions {
+	background:url(../pics/pfeil-oben-hellgrau.png) right center no-repeat;*/
+}
+
+.morecontent.slidecontent {
+	padding-top:0;
+}
+/*
+.filterform .button .kv-button, .filterform .button .kv-button-blau {
+	margin-bottom:0.75em;
+}
+
+ BIS HIER */
+
+/* Sortierung */
+.sortview .sortlist a {
+	text-decoration:none;
+	color:#3f3f3f;
+}
+
+.mobileslideclick {
+	display:none;
+	text-align:right;
+}
+
+.mobileslideclick a {
+	display:inline-block;
+	padding:0.5em 1em 0.5em 0;
+	margin:0;
+	cursor:pointer;
+}
+
+.mobileslideclick.closed a {
+	background:url(../pics/pfeil-rechts-rot.png) right center no-repeat;
+}
+.mobileslideclick.open a {
+	background:url(../pics/pfeil-unten-rot.png) right center no-repeat;
+}
+
+.mobileslidecontent {
+}
+
+@media (max-width: 70em) {
+	.colwrap.changeorder aside .filterform {
+	}
+
+	.mobileslideclick {
+		display:block;
+	}
+	
+	.mobileslidecontent {
+	}
+	
+}
+
+
+/*********************** Detailansicht ***********************/
+/* AB HIER 
+.boerse .buttons {
+	list-style:none;
+	margin-left:0;
+	padding-bottom:0.25em;
+	border-bottom:1px solid #c1c1c1;
+}
+
+.boerse .buttons .left {
+	float:left;
+}
+.boerse .buttons .right {
+	float:right;
+}
+
+.boerse .buttons a {
+	color:#3f3f3f;
+	color:#818181;
+	text-decoration:none;
+}
+.boerse .buttons a:hover {
+	text-decoration:underline;
+}*/
+
+.boerse .buttons .printbutton a {
+	padding-left:21px;
+	background:url(../pics/print.png) left center no-repeat;
+}
+.boerse .buttons .mailbutton a {
+	padding-left:25px;
+	background:url(../pics/brief.png) left center no-repeat;
+}
+
+.boerse .bildergalerie .figure {
+	width:20%; /* max 5 Bilder zugelassen */
+}
+
+/* BIS HIER */
+
+/*********************** Inserieren ***********************/
+/*.inserat {
+}
+
+.inserat h3 {
+	margin-top:0;
+}
+
+ AB HIER 
+.inserat form fieldset {
+	margin-bottom:0;
+}*/
+/* BIS HIER */
+
+/*********************** Allgemeines ***********************/
+.textright {
+	float:right;
+}
+
+.textleft {
+	float:left;
+}
+
+/* AB HIER */
+
+
+/*********************** Merkliste ***********************/
+.merklistbutton a {
+	display:block;
+	width:25px;
+	height:25px;
+	text-indent:-9999px;
+	background-image:url(../pics/merkliste-icons-add-blau.png);
+	background-repeat:no-repeat;
+}
+
+.merkliste .merklistbutton a {
+	background-image:url(../pics/merkliste-icons-ok-grau.png);
+}
+
+.merklistbutton.remove a {
+	width:19px;
+	height:25px;
+	background-image:url(../pics/muelleimer.png);
+}
+
+/*.listview form, .singleview form {
+	background:none;
+	padding:0;
+}
+
+.merklistview .buttons, .singleview .buttons {
+	border:none;
+	padding:0;
+}
+
+.buttons .kv-button {
+	margin-bottom:0.75em;
+}
+ BIS HIER */
